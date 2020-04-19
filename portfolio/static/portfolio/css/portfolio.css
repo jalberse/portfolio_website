@@ -1,0 +1,44 @@
+.center {
+  margin: 0 auto;
+}
+
+.button-grey {
+  background-color: #e7e7e7; /* Grey */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  margin-top: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width:100%;
+}
+.button-black {
+  background-color: #555555; /* Black */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin-top: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width:100%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.row-even {
+  background-color: lightgrey;
+  padding-top:32px;
+  padding-bottom:32px;
+}
+
+.row-odd {
+  background-color: white;
+  padding-top:32px;
+  padding-bottom:32px;
+}

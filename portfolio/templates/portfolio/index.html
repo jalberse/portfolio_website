@@ -1,0 +1,40 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include "portfolio/global-head.html" %}
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Global navbar -->
+    {% include "portfolio/navbar.html" %}
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <div class="text-center">
+            <img class="img-fluid rounded-circle" style="padding:16px;" src="{% static 'img/me.jpg' %}">
+          </div>
+          <p class="text-center">
+              John Alberse is an illustrator and programmer based out of Norman, OK who is currently pursuing a B.S. in Computer Science at the University of Oklahoma
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 offset-md-4">
+          <a href="{% url 'portfolio:gallery' slug='animation' %}" class="btn btn-light btn-block" role="button">Art</a>
+        </div>
+        <div class="col-md-2">
+          <a href="{% url 'portfolio:projects' %}" class="btn btn-dark btn-block" role="button">Code</a>
+        </div>
+      </div>
+    </div>
+
+    {% include "portfolio/footer.html" %}
+
+    <!-- Bootstrap javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="{% url 'portfolio:index' %}">John Alberse</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link float-right" href="{% url 'portfolio:index' %}">Home<span class="sr-only">(current)</span></a>
+      <a class="nav-link float-right" href="{% url 'portfolio:projects' %}">Code</a>
+      <a class="nav-link float-right" href="{% url 'portfolio:gallery' slug='animation' %}">Art</a>
+      <a class="nav-link float-right" href="https://github.com/jalberse">GitHub</a>
+      <a class="nav-link float-right" href="https://www.inprnt.com/gallery/jra1152/">Store</a>
+    </div>
+  </div>
+</nav>
